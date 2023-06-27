@@ -1,9 +1,14 @@
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Settings from './pages/Settings'
 
 function App() {
   return (
-    <div className="App">
-      hello
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Settings />} />
+      </Routes>
+    </>
   );
 }
 
