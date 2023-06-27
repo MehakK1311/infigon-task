@@ -35,19 +35,19 @@ const Main = () => {
                             <label className="radio-container">
                                 <input type="radio" name="option" value="option1" className="hidden" />
                                 <img src={theme1} alt="Option 1" className="radio-image" />
-                                <span class="radio-label">System preference</span>
+                                <span className="radio-label">System preference</span>
                             </label>
 
                             <label className="radio-container">
                                 <input type="radio" name="option" value="option2" className="hidden" />
                                 <img src={theme2} alt="Light" className="radio-image" />
-                                <span class="radio-label">Light</span>
+                                <span className="radio-label">Light</span>
                             </label>
 
                             <label className=" radio-container">
                                 <input type="radio" name="option" value="option3" className="hidden" />
                                 <img src={theme3} alt="Dark" className="radio-image" />
-                                <span class="radio-label">Dark</span>
+                                <span className="radio-label">Dark</span>
                             </label>
 
                         </div>
@@ -98,13 +98,13 @@ const Main = () => {
                             <label className="radio-container">
                                 <input type="radio" name="option" value="option2" className="hidden" />
                                 <img src={tableview1} alt="Default" className="radio-image" />
-                                <span class="radio-label">Default</span>
+                                <span className="radio-label">Default</span>
                             </label>
 
                             <label className="radio-container">
                                 <input type="radio" name="option" value="option3" className="hidden" />
                                 <img src={tableview2} alt="Compact" className="radio-image" />
-                                <span class="radio-label">Compact</span>
+                                <span className="radio-label">Compact</span>
                             </label>
                         </div>
                     </div>
