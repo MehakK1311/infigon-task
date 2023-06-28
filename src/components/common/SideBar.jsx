@@ -6,24 +6,21 @@ import {FiSearch, FiCreditCard} from 'react-icons/fi'
 import {CgProfile} from 'react-icons/cg'
 import {BsThreeDots, BsStars} from 'react-icons/bs'
 import {FaConnectdevelop} from 'react-icons/fa'
+import { useWindowSize } from "usehooks-ts";
 
-const SideBar = () => {
-    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+const SideBar = (props) => {
 
-    const toggleSidebar = () => {
-      setIsSidebarOpen(!isSidebarOpen);
-    };
-  
+  const { width } = useWindowSize();
+
     return (
-        <div className='bg-white sidebar fixed top-0 bottom-0 lg:left-0 py-1 pl-4 w-2/12 overflow-y-auto text-center'>
+        <div className={`bg-white sidebar fixed top-0 bottom-0 lg:left-0 py-1 pl-4 w-2/12 overflow-y-auto text-center z-10`}>
         <div className="text-gray-800 text-xl mt-2">
           <div className="p-2.5 flex items-center">
           <RxDotFilled className='text-3xl'/>
             <h1 className="font-bold text-xl">Untitled UI</h1>
-            <AiOutlineClose className='text-md cursor-pointer ml-28 lg:hidden' onClick={toggleSidebar}/>
+            <AiOutlineClose className={`text-md cursor-pointer ml-28 ${width>=1020 ? 'hidden':'' }`} onClick={props.handleClick}/>
           </div>
         </div>
-
         <div className="p-2 flex items-center rounded-md -ml-6 text-white mb-2"> 
           <span className="text-lg ml-4 text-gray-800 font-bold ">Settings</span>
         </div>

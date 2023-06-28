@@ -7,13 +7,12 @@ import tableview1 from '../../assets/radioButton/tableview1.png'
 import tableview2 from '../../assets/radioButton/tableview2.png'
 import { useWindowSize } from "usehooks-ts";
 
-
 const Main = () => {
 
     const { width } = useWindowSize();  
 
     return (
-        <div className={`mt-2 mb-10 mx-6 h-full px-6 pt-6 ${width>=1020?'border border-transparent border-l-gray-300 border-t-gray-300 rounded-tl-[50px]':''} `}>
+        <div className={` ${width>=1020?'border border-transparent border-l-gray-300 border-t-gray-300 rounded-tl-[50px] mt-2 mb-10 mx-6 h-full px-6 pt-6':'mt-2 mb-10 h-full p-2.5'} `}>
             <div className="flex items-center">
                 <RxDotFilled className='text-3xl' />
                 <h1 className="font-bold text-2xl">Settings</h1>

@@ -1,6 +1,5 @@
-import React from 'react'
+import { useState } from "react";
 import { useWindowSize } from "usehooks-ts";
-
 
 const Layout = (props) => {
 
@@ -8,9 +7,6 @@ const Layout = (props) => {
 
   return (
     <div>
-      <header>
-        {props.header}
-      </header>
       {
         width >= 1020 ? (
           <div className="flex flex-row">
@@ -23,9 +19,9 @@ const Layout = (props) => {
           </div>
         ) : (
           <>
-            {/* <aside>
-              {props.sidebar}
-            </aside> */}
+            <header>
+              {props.header}
+            </header>
             <main>
               {props.children}
             </main>
