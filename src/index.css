@@ -11,7 +11,7 @@ body {
 }
 
 .radio-image {
-  @apply w-40 h-28 mr-4 rounded-xl border-2 border-transparent cursor-pointer;
+  @apply w-[160px] h-[122px] rounded-xl border-2 border-transparent cursor-pointer;
 }
 
 .radio-container input[type="radio"]:checked + .radio-image {

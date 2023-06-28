@@ -4,6 +4,10 @@ module.exports = withMT({
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {},
+    screens: {
+      'mobile': '320px',
+      'tablet': '540px',
+    },
   },
   plugins: [],
 });

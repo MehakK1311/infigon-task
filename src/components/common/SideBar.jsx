@@ -9,13 +9,13 @@ import {FaConnectdevelop} from 'react-icons/fa'
 
 const SideBar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-  
+
     const toggleSidebar = () => {
       setIsSidebarOpen(!isSidebarOpen);
     };
   
     return (
-      <div className='bg-white sidebar fixed top-0 bottom-0 lg:left-0 py-1 pl-4 w-2/12 overflow-y-auto text-center'>
+        <div className='bg-white sidebar fixed top-0 bottom-0 lg:left-0 py-1 pl-4 w-2/12 overflow-y-auto text-center'>
         <div className="text-gray-800 text-xl mt-2">
           <div className="p-2.5 flex items-center">
           <RxDotFilled className='text-3xl'/>
@@ -65,6 +65,8 @@ const SideBar = () => {
         </div>
         
       </div>
+     
+      
     );
 };
 
