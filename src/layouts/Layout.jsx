@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useWindowSize } from "usehooks-ts";
 
 const Layout = (props) => {

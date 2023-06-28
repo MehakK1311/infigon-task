@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
 import {RxDotFilled} from 'react-icons/rx'
 import {AiOutlineClose, AiOutlineFlag, AiOutlineTeam, AiOutlineCreditCard} from 'react-icons/ai'
-import {HiOutlineMenuAlt1} from 'react-icons/hi'
 import {FiSearch, FiCreditCard} from 'react-icons/fi'
 import {CgProfile} from 'react-icons/cg'
 import {BsThreeDots, BsStars} from 'react-icons/bs'
 import {FaConnectdevelop} from 'react-icons/fa'
 import { useWindowSize } from "usehooks-ts";
 
-const SideBar = (props) => {
+const SideBar = () => {
 
   const { width } = useWindowSize();
 
@@ -18,7 +16,7 @@ const SideBar = (props) => {
           <div className="p-2.5 flex items-center">
           <RxDotFilled className='text-3xl'/>
             <h1 className="font-bold text-xl">Untitled UI</h1>
-            <AiOutlineClose className={`text-md cursor-pointer ml-28 ${width>=1020 ? 'hidden':'' }`} onClick={props.handleClick}/>
+            <AiOutlineClose className={`text-md cursor-pointer ml-28 ${width>=1020 ? 'hidden':'' }`} />
           </div>
         </div>
         <div className="p-2 flex items-center rounded-md -ml-6 text-white mb-2"> 

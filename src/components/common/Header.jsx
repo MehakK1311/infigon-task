@@ -1,9 +1,7 @@
 import { RxDotFilled } from 'react-icons/rx'
-import { AiOutlineClose } from 'react-icons/ai'
 import { HiOutlineMenuAlt1 } from 'react-icons/hi'
-import { useState } from 'react';
 
-const Header = (props) => {
+const Header = () => {
    
     
     return (
@@ -16,7 +14,7 @@ const Header = (props) => {
             </div>
             <ul className="flex items-center p-5">
                 <li>
-                    <HiOutlineMenuAlt1 className="text-xl" onClick={props.handleClick}/>
+                    <HiOutlineMenuAlt1 className="text-xl"/>
                 </li>
             </ul>
         </nav>
